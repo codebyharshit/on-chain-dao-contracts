@@ -49,15 +49,15 @@ To run this project, you must have the following installed:
 
 Run npm install to install required dependencies.
 
-
+```
 $ npm install
-
+```
 
 ## Clone repository
 
-
+```
 $ git clone https://github.com/codebyharshit/on-chain-dao-contracts.git
-
+```
 
 ## Smart contract structure
  This repository uses openzeppelin's modular system of governance
@@ -70,13 +70,13 @@ $ git clone https://github.com/codebyharshit/on-chain-dao-contracts.git
 ## Smart contract Interaction
 
 - Compile smart contracts
-
+```
 $  npx hardhat compile
-
+```
 - Test smart contracts
-
+```
 $   npx hardhat test
-
+```
 
 ## Smart contract Deployment
 - Create a .env file in the root directory and add the following variables
@@ -97,19 +97,20 @@ EXPLORER_APIKEY=""
 - polygon (mumbai testnet)
 
 ## Run Hardhat Test on Localhost
-
+```
 $   npx hardhat test
-
+```
 
 ## Check test coverages
-
+```
 $   npx hardhat coverage
-
+```
 
 ## Deploying Governance Smart Contract
-
+```
 $   npx hardhat run --network localhost scripts/deploy.js
-
+```
 ## Smart contract verification
-
+```
 $   npx hardhat verify --network polygon DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1"
+```
